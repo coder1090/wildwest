@@ -12,13 +12,16 @@ public class spawn_3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnRandomMonster", startDelay, spawnInterval);
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            InvokeRepeating("SpawnRandomMonster", startDelay, spawnInterval);
+        }
     }
     void SpawnRandomMonster()
     {
