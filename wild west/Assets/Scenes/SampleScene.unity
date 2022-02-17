@@ -28846,7 +28846,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh10112
+  m_Name: pb_Mesh10104
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -41394,7 +41394,6 @@ GameObject:
   - component: {fileID: 1237968077}
   - component: {fileID: 1237968076}
   - component: {fileID: 1237968075}
-  - component: {fileID: 1237968074}
   m_Layer: 0
   m_Name: rock (4)
   m_TagString: Untagged
@@ -41402,20 +41401,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1237968074
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237968073}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 88092405}
 --- !u!33 &1237968075
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -47701,7 +47686,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh10396
+  m_Name: pb_Mesh10388
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -48625,7 +48610,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh9060
+  m_Name: pb_Mesh9052
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -48862,7 +48847,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh9990
+  m_Name: pb_Mesh9982
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -65531,7 +65516,6 @@ GameObject:
   - component: {fileID: 1971119148}
   - component: {fileID: 1971119147}
   - component: {fileID: 1971119146}
-  - component: {fileID: 1971119145}
   m_Layer: 0
   m_Name: rock (7)
   m_TagString: Untagged
@@ -65539,20 +65523,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1971119145
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971119144}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 1492462219}
 --- !u!33 &1971119146
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -68572,7 +68542,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh9170
+  m_Name: pb_Mesh9162
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -69011,7 +68981,6 @@ GameObject:
   - component: {fileID: 2022839641}
   - component: {fileID: 2022839640}
   - component: {fileID: 2022839639}
-  - component: {fileID: 2022839638}
   m_Layer: 0
   m_Name: rock (9)
   m_TagString: Untagged
@@ -69019,20 +68988,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &2022839638
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022839637}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 758303232}
 --- !u!33 &2022839639
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -73794,7 +73749,6 @@ GameObject:
   - component: {fileID: 2119081532}
   - component: {fileID: 2119081531}
   - component: {fileID: 2119081530}
-  - component: {fileID: 2119081529}
   m_Layer: 0
   m_Name: rock
   m_TagString: Untagged
@@ -73802,20 +73756,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &2119081529
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119081528}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 1428574846}
 --- !u!33 &2119081530
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -76548,7 +76488,7 @@ PrefabInstance:
     - target: {fileID: 6216228746456937897, guid: df5427711d1794cc8b81e7cfbca40c76,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.902281
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 6216228746456937897, guid: df5427711d1794cc8b81e7cfbca40c76,
         type: 3}
@@ -76558,7 +76498,7 @@ PrefabInstance:
     - target: {fileID: 6216228746456937897, guid: df5427711d1794cc8b81e7cfbca40c76,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.6567353
+      value: -1.66
       objectReference: {fileID: 0}
     - target: {fileID: 6216228746456937897, guid: df5427711d1794cc8b81e7cfbca40c76,
         type: 3}
