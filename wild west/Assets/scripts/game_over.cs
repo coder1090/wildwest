@@ -17,6 +17,7 @@ public class game_over : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        GameObject.FindObjectOfType<game_over_screan>().GameOver();
         Destroy(gameObject);
         Destroy(other.gameObject);
     }
