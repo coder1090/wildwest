@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1986479655996219617}
   - component: {fileID: 121053736681927763}
   - component: {fileID: 9010834214871644242}
-  - component: {fileID: 6780157439167821636}
   - component: {fileID: 1571131372644886529}
   - component: {fileID: 928450715}
+  - component: {fileID: 114696874587629538}
   m_Layer: 0
   m_Name: Sphere (16)
   m_TagString: bulite
@@ -107,23 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f92d88c9af56c429ca52a74e7e2e162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
---- !u!114 &6780157439167821636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951508072266027144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1023607cc325442985dd8477a8a3663, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  topBound: -117
-  lowerBound: -220
-  rightBound: 75
-  leftBound: -64
+  speed: 100
 --- !u!54 &1571131372644886529
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -152,3 +136,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e8c54ad11d949b6aa2c17491ea0f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114696874587629538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951508072266027144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1023607cc325442985dd8477a8a3663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBound: 2372
+  lowerBound: -2661
+  rightBound: 3174
+  leftBound: -2661
