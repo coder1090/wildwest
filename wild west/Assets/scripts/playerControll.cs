@@ -10,13 +10,15 @@ public class playerControll : MonoBehaviour
     private float forwardInput;
     private float spawnDelay = 0;
     private float spawnInterval = 0.5f;
+    public float zBound = -322.13f;
+    public float Zbound = 333.72f;
 
     public GameObject projectitlePrefabs;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -36,6 +38,19 @@ public class playerControll : MonoBehaviour
         {
             Instantiate(projectitlePrefabs, transform.position, transform.rotation);
             spawnDelay = 0;
+        }
+        ConstrainPlayerPoistion();
+    }
+    void ConstrainPlayerPoistion()
+    {
+
+        if (transform.position.z < zBound)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zBound);
+        }
+        if (transform.position.z > Zbound)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, Zbound);
         }
     }
 }
