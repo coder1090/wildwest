@@ -18,7 +18,7 @@ public class spawn_3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             InvokeRepeating("SpawnRandomMonster", startDelay, spawnInterval);
         }

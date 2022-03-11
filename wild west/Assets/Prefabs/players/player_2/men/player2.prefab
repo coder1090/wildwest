@@ -4106,8 +4106,8 @@ GameObject:
   - component: {fileID: 8715102694287353435}
   - component: {fileID: 8715102694287353433}
   - component: {fileID: 8715102694287353413}
-  - component: {fileID: 8715102694287353432}
   - component: {fileID: 8715102694287353412}
+  - component: {fileID: 114546406622732906}
   m_Layer: 0
   m_Name: player2
   m_TagString: Untagged
@@ -4237,18 +4237,6 @@ MonoBehaviour:
   turnSpeed: 250
   projectitlePrefabs: {fileID: 8936364532086072795, guid: f92beb2caf37842b9aa19d3a3cb454f3,
     type: 3}
---- !u!114 &8715102694287353432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8715102694287353438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca8a3e4b0fcfd497a9d26b12972ae2cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &8715102694287353412
 Animator:
   serializedVersion: 3
@@ -4268,6 +4256,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114546406622732906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8715102694287353438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c7c2c283b4db4710922f6bb774d23df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8715102694301278024
 GameObject:
   m_ObjectHideFlags: 0

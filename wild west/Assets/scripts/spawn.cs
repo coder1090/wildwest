@@ -21,7 +21,7 @@ public class spawn : MonoBehaviour
     void Update()
     {
         {
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(KeyCode.Space))
                 {
                 InvokeRepeating("SpawnRandomMonster", startDelay, spawnInterval);
             }
