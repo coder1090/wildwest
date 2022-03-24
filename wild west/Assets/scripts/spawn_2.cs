@@ -9,6 +9,7 @@ public class spawn_2 : MonoBehaviour
     private float spawnposz = -167;
     private float startDelay = 8;
     private float spawnInterval = 6.0f;
+    public bool space = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +20,13 @@ public class spawn_2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && space)
         {
             InvokeRepeating("SpawnRandomMonster", startDelay, spawnInterval);
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            space = false;
         }
     }
     void SpawnRandomMonster()

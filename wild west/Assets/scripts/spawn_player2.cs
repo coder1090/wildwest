@@ -7,8 +7,7 @@ public class spawn_player2 : MonoBehaviour
     public GameObject[] animalPrefabs;
     private float spawnRangeX = 16;
     private float spawnPosZ = -175;
-    private float startDelay = 1;
-    private float spawnInterval = 10000;
+    private bool X = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,17 +18,17 @@ public class spawn_player2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.X) && X)
+        {
+            int animalIndex = Random.Range(0, animalPrefabs.Length);
+            Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX, spawnRangeX), 0, spawnPosZ);
+
+            Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
+        }
         if (Input.GetKeyDown(KeyCode.X))
         {
-            InvokeRepeating("SpawnRandomMonster", startDelay, spawnInterval);
+            X = false;
         }
-    }
-    void SpawnRandomMonster()
-    {
-        int animalIndex = Random.Range(0, animalPrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX, spawnRangeX), 0, spawnPosZ);
-
-        Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
 
     }
 }
