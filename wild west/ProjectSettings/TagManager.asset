@@ -8,6 +8,7 @@ TagManager:
   - Hittable
   - ground
   - bulite
+  - player_2
   layers:
   - Default
   - TransparentFX

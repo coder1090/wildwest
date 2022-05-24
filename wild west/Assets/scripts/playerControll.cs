@@ -9,16 +9,18 @@ public class playerControll : MonoBehaviour
     private float horizontalInput;
     private float forwardInput;
     private float spawnDelay = 0;
+    public AudioClip fire;
     private float spawnInterval = 0.5f;
     public float zBound = -322.13f;
     public float Zbound = 333.72f;
+    private AudioSource playerAudio;
 
     public GameObject projectitlePrefabs;
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class playerControll : MonoBehaviour
         {
             Instantiate(projectitlePrefabs, transform.position, transform.rotation);
             spawnDelay = 0;
+            playerAudio.PlayOneShot(fire, 1.0f);
         }
         ConstrainPlayerPoistion();
     }

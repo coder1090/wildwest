@@ -7,8 +7,8 @@ public class spawn_3 : MonoBehaviour
     public GameObject[] animalPrefabs;
     private float spawnrangex = 56;
     private float spawnposz = -162;
-    private float startDelay = 10;
-    private float spawnInterval = 7.0f;
+    private float startDelay = 16;
+    private float spawnInterval = 15.0f;
     public bool space = true;
 
     // Start is called before the first frame update
