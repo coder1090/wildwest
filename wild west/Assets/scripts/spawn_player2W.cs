@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class spawn_player2W : MonoBehaviour
 {
-    public GameObject[] animalPrefabs;
+    public GameObject[] humans;
     private float spawnRangeX = 16;
     private float spawnPosZ = -175;
 
@@ -19,10 +19,10 @@ public class spawn_player2W : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.V))
         {
-            int animalIndex = Random.Range(0, animalPrefabs.Length);
+            int humansIndex = Random.Range(0, humans.Length);
             Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX, spawnRangeX), 0, spawnPosZ);
 
-            Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
+            Instantiate(humans[humansIndex], spawnPos, humans[humansIndex].transform.rotation);
         }
     }
 }

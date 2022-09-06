@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class spawn_player1 : MonoBehaviour
 {
-    public GameObject[] animalPrefabs;
+    public bool prespace = false;
+    public GameObject[] humans;
     private float spawnRangeX = 0.001f;
     private float spawnPosZ = -175;
     private bool space = true;
@@ -17,16 +18,20 @@ public class spawn_player1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && space)
+        if (Input.GetKeyDown(KeyCode.Space) && prespace && space)
         {
-            int animalIndex = Random.Range(0, animalPrefabs.Length);
+            int humansIndex = Random.Range(0, humans.Length);
             Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX, spawnRangeX), 0, spawnPosZ);
 
-            Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
+            Instantiate(humans[humansIndex], spawnPos, humans[humansIndex].transform.rotation);
+        }
+        if (Input.GetKeyDown(KeyCode.Space)&& prespace)
+        {
+            space = false;
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            space = false;
+            prespace = true;
         }
     }
 }

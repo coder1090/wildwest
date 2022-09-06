@@ -42,18 +42,5 @@ public class playerControll : MonoBehaviour
             spawnDelay = 0;
             playerAudio.PlayOneShot(fire, 1.0f);
         }
-        ConstrainPlayerPoistion();
-    }
-    void ConstrainPlayerPoistion()
-    {
-
-        if (transform.position.z < zBound)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, zBound);
-        }
-        if (transform.position.z > Zbound)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, Zbound);
-        }
     }
 }
