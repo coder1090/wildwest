@@ -5,8 +5,8 @@ using UnityEngine;
 public class spawn_player2 : MonoBehaviour
 {
     public GameObject[] humans;
-    private float spawnRangeX = 16;
-    private float spawnPosZ = -175;
+    private float spawnRangeX = -4;
+    private float spawnPosZ = -77;
     private bool X = true;
 
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class spawn_player2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X) && X)
         {
             int humansIndex = Random.Range(0, humans.Length);
-            Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX, spawnRangeX), 0, spawnPosZ);
+            Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX, spawnRangeX), -8, spawnPosZ);
 
             Instantiate(humans[humansIndex], spawnPos, humans[humansIndex].transform.rotation);
         }
