@@ -27,6 +27,9 @@ public class spawn_start : MonoBehaviour
     //this code is for the maps
     public GameObject westMap;
     public GameObject woodMap;
+    public GameObject medowMap;
+    public GameObject snowMap;
+    public GameObject farmMap;
 
     // Start is called before the first frame update
     void Start()
@@ -58,14 +61,17 @@ public class spawn_start : MonoBehaviour
     public void medowSpawn()
     {
         medow.gameObject.SetActive(true);
+        medowMap.gameObject.SetActive(true);
     }
     public void snowSpawn()
     {
         snow.gameObject.SetActive(true);
+        snowMap.gameObject.SetActive(true);
     }
     public void farmSpawn()
     {
         farm.gameObject.SetActive(true);
+        farmMap.gameObject.SetActive(true);
     }
     public void caveSpawn()
     {
