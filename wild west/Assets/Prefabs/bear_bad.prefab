@@ -125,11 +125,12 @@ GameObject:
   m_Component:
   - component: {fileID: 870848777203707266}
   - component: {fileID: 8503172595454597933}
-  - component: {fileID: 496076169708529123}
   - component: {fileID: 54365371600480298}
+  - component: {fileID: 2517008804306286156}
+  - component: {fileID: 2612897246559620348}
   m_Layer: 0
   m_Name: bear_bad
-  m_TagString: Untagged
+  m_TagString: Hittable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,28 +159,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4560148057362347353}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.0058746, y: 14.855519, z: 14.944893}
-  m_Center: {x: -0.2681713, y: 0.75982046, z: -1.0726852}
---- !u!114 &496076169708529123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4560148057362347353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46ba58ce355e94384b64b554c353e65b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startDelay: 0.02
-  spawnInterval: 0.02
-  turnSpeed: -5500
-  time: 2
-  time2: 2
+  m_Size: {x: 8.1172905, y: 17.93301, z: 17.497963}
+  m_Center: {x: -0.39237022, y: 0.51216745, z: -0.6255226}
 --- !u!54 &54365371600480298
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -196,6 +180,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &2517008804306286156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560148057362347353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2136842e606ab4888b2cbdccb226b9c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
+--- !u!114 &2612897246559620348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560148057362347353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e8c54ad11d949b6aa2c17491ea0f90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5453443686745149467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3556,6 +3565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8519616133993970153}
+  - component: {fileID: 2228866138842464127}
   m_Layer: 0
   m_Name: bear
   m_TagString: Untagged
@@ -3587,6 +3597,19 @@ Transform:
   m_Father: {fileID: 870848777203707266}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2228866138842464127
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519616133993970154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.153568, y: 14.722202, z: 15.405207}
+  m_Center: {x: 0.5898583, y: 1.1486912, z: 1.6143751}
 --- !u!1 &8519616134025513471
 GameObject:
   m_ObjectHideFlags: 0
