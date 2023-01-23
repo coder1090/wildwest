@@ -102,11 +102,11 @@ GameObject:
   - component: {fileID: 6075479423727514990}
   - component: {fileID: 714985367418441666}
   - component: {fileID: 1986479655996219617}
-  - component: {fileID: 121053736681927763}
   - component: {fileID: 9010834214871644242}
   - component: {fileID: 1571131372644886529}
   - component: {fileID: 928450715}
   - component: {fileID: 114696874587629538}
+  - component: {fileID: 9184371210067602780}
   m_Layer: 0
   m_Name: Sphere (16)
   m_TagString: bulite
@@ -123,7 +123,7 @@ Transform:
   m_GameObject: {fileID: 1951508072266027144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.89, y: 5.23, z: -172.66287}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 2}
+  m_LocalScale: {x: 0.16000001, y: 0.16000001, z: 0.4}
   m_Children:
   - {fileID: 1626218290095794297}
   - {fileID: 7963128109429009005}
@@ -176,19 +176,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &121053736681927763
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951508072266027144}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9010834214871644242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f92d88c9af56c429ca52a74e7e2e162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 20
 --- !u!54 &1571131372644886529
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -216,7 +203,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &928450715
 MonoBehaviour:
@@ -242,6 +229,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1023607cc325442985dd8477a8a3663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &9184371210067602780
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951508072266027144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1.0614395}
+  m_Center: {x: 0, y: 0, z: 0.010242462}
 --- !u!1 &5294414045510403691
 GameObject:
   m_ObjectHideFlags: 0

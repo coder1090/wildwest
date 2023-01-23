@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4720135213776403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.6445134, y: 0.503, z: -118.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 6525401402533146155}
   - {fileID: 3027300574958763548}
@@ -139,8 +139,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.39027, y: 9.00132, z: 1.9277039}
-  m_Center: {x: 1.5136614, y: 3.8909292, z: 0.46385193}
+  m_Size: {x: 8.39027, y: 10.367154, z: 2.1993408}
+  m_Center: {x: 1.5136617, y: 4.5738454, z: 0.3280335}
 --- !u!114 &766247695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2136842e606ab4888b2cbdccb226b9c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 30
 --- !u!1 &100674185444494388
 GameObject:
   m_ObjectHideFlags: 0

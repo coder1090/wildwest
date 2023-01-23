@@ -5,8 +5,8 @@ using UnityEngine;
 public class snow_player : MonoBehaviour
 {
     public GameObject[] playerM1;
-    private float spawnRangeX = 0;
-    private float spawnPosZ = 0;
+    private float spawnRangeX = 5.44f;
+    private float spawnPosZ = -12.16f;
     private bool space = true;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class snow_player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && space)
         {
             int playerM1Index = Random.Range(0, playerM1.Length);
-            Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX, spawnRangeX), 90, spawnPosZ);
+            Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX, spawnRangeX), 17.4f, spawnPosZ);
 
             Instantiate(playerM1[playerM1Index], spawnPos, playerM1[playerM1Index].transform.rotation);
         }

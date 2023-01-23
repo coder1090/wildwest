@@ -5,8 +5,8 @@ using UnityEngine;
 public class snow_Spwner_1 : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
-    private float spawnRaneX = -285;
-    private float spawnPosZ = -159;
+    private float spawnRaneX = -51.56f;
+    private float spawnPosZ = -43.96f;
     private float startDelay = 6;
     private float spawnInterval = 5.0f;
     public bool space = true;
@@ -34,7 +34,7 @@ public class snow_Spwner_1 : MonoBehaviour
     void SpawnRandomMonster()
     {
         int animalIndex = Random.Range(0, animalPrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(spawnRaneX, spawnRaneX), 82, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(spawnRaneX, spawnRaneX), 14.8f, spawnPosZ);
 
         Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
 

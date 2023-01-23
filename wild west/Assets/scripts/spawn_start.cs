@@ -31,6 +31,7 @@ public class spawn_start : MonoBehaviour
     public GameObject snowMap;
     public GameObject farmMap;
     public GameObject caveMap;
+    public GameObject islandMap;
 
     // Start is called before the first frame update
     void Start()
@@ -82,6 +83,7 @@ public class spawn_start : MonoBehaviour
     public void islandSpawn()
     {
         island.gameObject.SetActive(true);
+        islandMap.gameObject.SetActive(true);
     }
     public void timeSpawn()
     {

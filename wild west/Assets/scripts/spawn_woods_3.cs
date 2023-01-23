@@ -5,8 +5,8 @@ using UnityEngine;
 public class spawn_woods_3 : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
-    private float spawnRaneX = 205;
-    private float spawnPosZ = 29;
+    private float spawnRaneX = 41.1f;
+    private float spawnPosZ = 5.9f;
     private float startDelay = 16;
     private float spawnInterval = 15.0f;
     public bool space = true;
@@ -34,7 +34,7 @@ public class spawn_woods_3 : MonoBehaviour
     void SpawnRandomMonster()
     {
         int animalIndex = Random.Range(0, animalPrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(spawnRaneX, spawnRaneX), -20, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(spawnRaneX, spawnRaneX), -4.258f, spawnPosZ);
 
         Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
 

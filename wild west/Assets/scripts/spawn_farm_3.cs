@@ -6,7 +6,7 @@ public class spawn_farm_3 : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
     private float spawnRaneX = 0;
-    private float spawnPosZ = -200;
+    private float spawnPosZ = -40;
     private float startDelay = 18;
     private float spawnInterval = 15.0f;
     public bool space = true;

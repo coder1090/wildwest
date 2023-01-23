@@ -5,8 +5,8 @@ using UnityEngine;
 public class cave_spawn_3 : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
-    private float spawnRaneX = -183;
-    private float spawnPosZ = 16;
+    private float spawnRaneX = -36.642f;
+    private float spawnPosZ = 3.200402f;
     private float startDelay = 18;
     private float spawnInterval = 15.0f;
     public bool space = true;
@@ -35,7 +35,7 @@ public class cave_spawn_3 : MonoBehaviour
     void SpawnRandomMonster()
     {
         int animalIndex = Random.Range(0, animalPrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(spawnRaneX, spawnRaneX), 10, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(spawnRaneX, spawnRaneX), 2.032f, spawnPosZ);
 
         Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
 

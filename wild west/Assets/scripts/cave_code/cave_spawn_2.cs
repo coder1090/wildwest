@@ -6,7 +6,7 @@ public class cave_spawn_2 : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
     private float spawnRaneX = 0;
-    private float spawnPosZ = 206;
+    private float spawnPosZ = 41.218f;
     private float startDelay = 12;
     private float spawnInterval = 10.0f;
     public bool space = true;
@@ -35,7 +35,7 @@ public class cave_spawn_2 : MonoBehaviour
     void SpawnRandomMonster()
     {
         int animalIndex = Random.Range(0, animalPrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(spawnRaneX, spawnRaneX), 10, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(spawnRaneX, spawnRaneX), 2.032f, spawnPosZ);
 
         Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
 

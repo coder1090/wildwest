@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bad_H : MonoBehaviour
 {
-    private float speed = -25;
+    private float speed = -7;
     public float startDelay = 1;
     public float spawnInterval = 1;
     public float turnSpeed = 90;

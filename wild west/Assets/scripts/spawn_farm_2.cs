@@ -5,7 +5,7 @@ using UnityEngine;
 public class spawn_farm_2 : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
-    private float spawnRaneX = -200;
+    private float spawnRaneX = -40;
     private float spawnPosZ = 0;
     private float startDelay = 12;
     private float spawnInterval = 10.0f;
