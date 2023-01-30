@@ -2476,7 +2476,7 @@ GameObject:
   - component: {fileID: 4831683449440207520}
   - component: {fileID: 138929683098527428}
   m_Layer: 0
-  m_Name: Cube (1) 1
+  m_Name: heart normal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2491,7 +2491,7 @@ Transform:
   m_GameObject: {fileID: 5437410765615221666}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5, y: 13.1, z: -163.57184}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 8715821850056264976}
   - {fileID: 3223654597032624817}

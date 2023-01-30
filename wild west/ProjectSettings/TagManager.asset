@@ -9,6 +9,7 @@ TagManager:
   - ground
   - bulite
   - player_2
+  - boat
   layers:
   - Default
   - TransparentFX
